@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>YAN Ads Demo - soulaimanr96.github.io</title>
+  <title>Yandex Ads Test</title>
 
-  <!-- Yandex.RTB Loader (only once) -->
-  <script>window.yaContextCb = window.yaContextCb || []</script>
+  <!-- Yandex.RTB Loader (only once, required for all ads) -->
+  <script>window.yaContextCb = window.yaContextCb || [];</script>
   <script src="https://yandex.ru/ads/system/context.js" async></script>
 </head>
 <body>
-  <h1>YAN Ads Preview</h1>
+  <h1>Yandex Ads Display Test</h1>
 
   <!-- Ad 1 -->
   <div id="yandex_rtb_R-A-16127951-1"></div>
@@ -19,8 +19,8 @@
       Ya.Context.AdvManager.render({
         blockId: "R-A-16127951-1",
         renderTo: "yandex_rtb_R-A-16127951-1"
-      })
-    })
+      });
+    });
   </script>
 
   <!-- Ad 2 -->
@@ -30,8 +30,8 @@
       Ya.Context.AdvManager.render({
         blockId: "R-A-16127951-2",
         renderTo: "yandex_rtb_R-A-16127951-2"
-      })
-    })
+      });
+    });
   </script>
 
   <!-- Ad 3 -->
@@ -41,43 +41,43 @@
       Ya.Context.AdvManager.render({
         blockId: "R-A-16127951-3",
         renderTo: "yandex_rtb_R-A-16127951-3"
-      })
-    })
+      });
+    });
   </script>
 
-  <!-- Ad 4 (Fullscreen on touch) -->
+  <!-- Ad 4 - Fullscreen -->
   <script>
     window.yaContextCb.push(() => {
       Ya.Context.AdvManager.render({
         blockId: "R-A-16127951-4",
         type: "fullscreen",
         platform: "touch"
-      })
-    })
+      });
+    });
   </script>
 
-  <!-- Ad 5 (Floor Ad on touch) -->
+  <!-- Ad 5 - FloorAd -->
   <script>
     window.yaContextCb.push(() => {
       Ya.Context.AdvManager.render({
         blockId: "R-A-16127951-5",
         type: "floorAd",
         platform: "touch"
-      })
-    })
+      });
+    });
   </script>
 
-  <!-- Ad 6 (Top Ad) -->
+  <!-- Ad 6 - TopAd -->
   <script>
     window.yaContextCb.push(() => {
       Ya.Context.AdvManager.render({
         blockId: "R-A-16127951-6",
         type: "topAd"
-      })
-    })
+      });
+    });
   </script>
 
-  <!-- Ad 7 (Feed) -->
+  <!-- Ad 7 - Feed -->
   <div id="yandex_rtb_R-A-16127951-7"></div>
   <script>
     window.yaContextCb.push(() => {
@@ -85,14 +85,12 @@
         blockId: "R-A-16127951-7",
         renderTo: "yandex_rtb_R-A-16127951-7",
         type: "feed"
-      })
-    })
+      });
+    });
   </script>
 
-  <!-- Optional example image for Ad 8 (In-Image) -->
-  <img src="https://via.placeholder.com/600x400" alt="Example Image" style="margin: 2rem auto; display: block;" />
-
-  <!-- Ad 8 (In-Image Ads, loaded after images) -->
+  <!-- In-Image Ad 8 -->
+  <img src="https://via.placeholder.com/600x300" alt="Example Image" style="display: block; margin: 2rem auto;" />
   <script>
     window.addEventListener("load", () => {
       const render = (imageId) => {
@@ -101,20 +99,20 @@
             renderTo: imageId,
             blockId: "R-A-16127951-8",
             type: "inImage"
-          })
-        })
-      }
+          });
+        });
+      };
       const renderInImage = (images) => {
         if (!images.length) return;
         const image = images.shift();
-        image.id = `yandex_rtb_R-A-16127951-8-${Math.random().toString(16).slice(2)}`
-        if (image.tagName === "IMG" && !image.complete) {
+        image.id = `yandex_img_${Math.random().toString(16).slice(2)}`;
+        if (!image.complete) {
           image.addEventListener("load", () => render(image.id), { once: true });
         } else {
           render(image.id);
         }
         renderInImage(images);
-      }
+      };
       renderInImage(Array.from(document.querySelectorAll("img")));
     }, { once: true });
   </script>
