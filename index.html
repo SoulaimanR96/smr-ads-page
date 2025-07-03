@@ -3,9 +3,94 @@
 <head>
     <meta charset="UTF-8" />
     <title>إعلانات</title>
+    <!-- Yandex.RTB Loader (only need one instance) -->
+    <script>window.yaContextCb=window.yaContextCb||[]</script>
+    <script src="https://yandex.ru/ads/system/context.js" async></script>
 </head>
 <body>
     <h2>إعلان 1</h2>
+    <!-- Yandex.RTB R-A-16127951-1 -->
+    <div id="yandex_rtb_R-A-16127951-1"></div>
+    <script>
+    window.yaContextCb.push(() => {
+        Ya.Context.AdvManager.render({
+            "blockId": "R-A-16127951-1",
+            "renderTo": "yandex_rtb_R-A-16127951-1"
+        })
+    })
+    </script>
+
+    <h2>إعلان 2</h2>
+    <!-- Yandex.RTB R-A-16127951-2 -->
+    <div id="yandex_rtb_R-A-16127951-2"></div>
+    <script>
+    window.yaContextCb.push(() => {
+        Ya.Context.AdvManager.render({
+            "blockId": "R-A-16127951-2",
+            "renderTo": "yandex_rtb_R-A-16127951-2"
+        })
+    })
+    </script>
+
+    <h2>إعلان 3</h2>
+    <!-- Yandex.RTB R-A-16127951-3 -->
+    <div id="yandex_rtb_R-A-16127951-3"></div>
+    <script>
+    window.yaContextCb.push(() => {
+        Ya.Context.AdvManager.render({
+            "blockId": "R-A-16127951-3",
+            "renderTo": "yandex_rtb_R-A-16127951-3"
+        })
+    })
+    </script>
+
+    <!-- Yandex.RTB R-A-16127951-4 (Fullscreen) -->
+    <script>
+    window.yaContextCb.push(() => {
+        Ya.Context.AdvManager.render({
+            "blockId": "R-A-16127951-4",
+            "type": "fullscreen",
+            "platform": "touch"
+        })
+    })
+    </script>
+
+    <!-- Yandex.RTB R-A-16127951-5 (Floor Ad) -->
+    <script>
+    window.yaContextCb.push(() => {
+        Ya.Context.AdvManager.render({
+            "blockId": "R-A-16127951-5",
+            "type": "floorAd",
+            "platform": "touch"
+        })
+    })
+    </script>
+
+    <!-- Yandex.RTB R-A-16127951-6 (Top Ad) -->
+    <script>
+    window.yaContextCb.push(() => {
+        Ya.Context.AdvManager.render({
+            "blockId": "R-A-16127951-6",
+            "type": "topAd"
+        })
+    })
+    </script>
+
+    <h2>إعلان 7</h2>
+    <!-- Yandex.RTB R-A-16127951-7 (Feed) -->
+    <div id="yandex_rtb_R-A-16127951-7"></div>
+    <script>
+    window.yaContextCb.push(() => {
+        Ya.Context.AdvManager.render({
+            "blockId": "R-A-16127951-7",
+            "renderTo": "yandex_rtb_R-A-16127951-7",
+            "type": "feed"
+        })
+    })
+    </script>
+
+    <!-- Original ads you had -->
+    <h2>إعلان 8</h2>
     <script type="text/javascript">
         atOptions = {
             'key' : '7565faf0120f4769facd4ef67999c731',
@@ -17,7 +102,7 @@
     </script>
     <script type="text/javascript" src="//www.highperformanceformat.com/7565faf0120f4769facd4ef67999c731/invoke.js"></script>
 
-    <h2>إعلان 2</h2>
+    <h2>إعلان 9</h2>
     <script type="text/javascript">
         atOptions = {
             'key' : 'c70d9ace3e146575408c289503bb762f',
@@ -28,5 +113,36 @@
         };
     </script>
     <script type="text/javascript" src="//www.highperformanceformat.com/c70d9ace3e146575408289503bb762f/invoke.js"></script>
+
+    <!-- Yandex.RTB R-A-16127951-8 (In-Image) - Placed at end of body as instructed -->
+    <script>
+    window.addEventListener("load", () => {
+        const render = (imageId) => {
+            window.yaContextCb.push(() => {
+                Ya.Context.AdvManager.render({
+                    "renderTo": imageId,
+                    "blockId": "R-A-16127951-8",
+                    "type": "inImage"
+                })
+            })
+        }
+        const renderInImage = (images) => {
+            if (!images.length) {
+                return
+            }
+            const image = images.shift()
+            image.id = `yandex_rtb_R-A-16127951-8-${Math.random().toString(16).slice(2)}`
+            if (image.tagName === "IMG" && !image.complete) {
+                image.addEventListener("load", () => {
+                    render(image.id)
+                }, { once: true })
+            } else {
+                render(image.id)
+            }
+            renderInImage(images)
+        }
+        renderInImage(Array.from(document.querySelectorAll("img")))
+    }, { once: true })
+    </script>
 </body>
 </html>
