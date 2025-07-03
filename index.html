@@ -1,96 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yandex Ads Test</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إعلانات Yandex</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 15px;
+    }
 
-  <!-- Yandex.RTB Loader (only once, required for all ads) -->
+    .header {
+      background: #2196F3;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 22px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .ad-container {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin: 15px auto;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .ad-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
+    }
+  </style>
+
+  <!-- Yandex.RTB Loader Code - Include only ONCE -->
   <script>window.yaContextCb = window.yaContextCb || [];</script>
   <script src="https://yandex.ru/ads/system/context.js" async></script>
 </head>
 <body>
-  <h1>Yandex Ads Display Test</h1>
 
-  <!-- Ad 1 -->
-  <div id="yandex_rtb_R-A-16127951-1"></div>
-  <script>
-    window.yaContextCb.push(() => {
-      Ya.Context.AdvManager.render({
-        blockId: "R-A-16127951-1",
-        renderTo: "yandex_rtb_R-A-16127951-1"
-      });
-    });
-  </script>
+  <div class="header">إعلانات Yandex - الصفحة التجريبية</div>
 
-  <!-- Ad 2 -->
-  <div id="yandex_rtb_R-A-16127951-2"></div>
-  <script>
-    window.yaContextCb.push(() => {
-      Ya.Context.AdvManager.render({
-        blockId: "R-A-16127951-2",
-        renderTo: "yandex_rtb_R-A-16127951-2"
-      });
-    });
-  </script>
+  <div class="ad-grid">
+    <!-- Ad 1 -->
+    <div class="ad-container">
+      <div id="yandex_rtb_R-A-16127951-1"></div>
+      <script>
+        window.yaContextCb.push(() => {
+          Ya.Context.AdvManager.render({
+            blockId: "R-A-16127951-1",
+            renderTo: "yandex_rtb_R-A-16127951-1"
+          });
+        });
+      </script>
+    </div>
 
-  <!-- Ad 3 -->
-  <div id="yandex_rtb_R-A-16127951-3"></div>
-  <script>
-    window.yaContextCb.push(() => {
-      Ya.Context.AdvManager.render({
-        blockId: "R-A-16127951-3",
-        renderTo: "yandex_rtb_R-A-16127951-3"
-      });
-    });
-  </script>
+    <!-- Ad 2 -->
+    <div class="ad-container">
+      <div id="yandex_rtb_R-A-16127951-2"></div>
+      <script>
+        window.yaContextCb.push(() => {
+          Ya.Context.AdvManager.render({
+            blockId: "R-A-16127951-2",
+            renderTo: "yandex_rtb_R-A-16127951-2"
+          });
+        });
+      </script>
+    </div>
 
-  <!-- Ad 4 - Fullscreen -->
-  <script>
-    window.yaContextCb.push(() => {
-      Ya.Context.AdvManager.render({
-        blockId: "R-A-16127951-4",
-        type: "fullscreen",
-        platform: "touch"
-      });
-    });
-  </script>
+    <!-- Ad 3 -->
+    <div class="ad-container">
+      <div id="yandex_rtb_R-A-16127951-3"></div>
+      <script>
+        window.yaContextCb.push(() => {
+          Ya.Context.AdvManager.render({
+            blockId: "R-A-16127951-3",
+            renderTo: "yandex_rtb_R-A-16127951-3"
+          });
+        });
+      </script>
+    </div>
 
-  <!-- Ad 5 - FloorAd -->
-  <script>
-    window.yaContextCb.push(() => {
-      Ya.Context.AdvManager.render({
-        blockId: "R-A-16127951-5",
-        type: "floorAd",
-        platform: "touch"
-      });
-    });
-  </script>
+    <!-- Ad 4 (Fullscreen Touch) -->
+    <div class="ad-container">
+      <script>
+        window.yaContextCb.push(() => {
+          Ya.Context.AdvManager.render({
+            blockId: "R-A-16127951-4",
+            type: "fullscreen",
+            platform: "touch"
+          });
+        });
+      </script>
+    </div>
 
-  <!-- Ad 6 - TopAd -->
-  <script>
-    window.yaContextCb.push(() => {
-      Ya.Context.AdvManager.render({
-        blockId: "R-A-16127951-6",
-        type: "topAd"
-      });
-    });
-  </script>
+    <!-- Ad 5 (FloorAd Touch) -->
+    <div class="ad-container">
+      <script>
+        window.yaContextCb.push(() => {
+          Ya.Context.AdvManager.render({
+            blockId: "R-A-16127951-5",
+            type: "floorAd",
+            platform: "touch"
+          });
+        });
+      </script>
+    </div>
 
-  <!-- Ad 7 - Feed -->
-  <div id="yandex_rtb_R-A-16127951-7"></div>
-  <script>
-    window.yaContextCb.push(() => {
-      Ya.Context.AdvManager.render({
-        blockId: "R-A-16127951-7",
-        renderTo: "yandex_rtb_R-A-16127951-7",
-        type: "feed"
-      });
-    });
-  </script>
+    <!-- Ad 6 (TopAd) -->
+    <div class="ad-container">
+      <script>
+        window.yaContextCb.push(() => {
+          Ya.Context.AdvManager.render({
+            blockId: "R-A-16127951-6",
+            type: "topAd"
+          });
+        });
+      </script>
+    </div>
 
-  <!-- In-Image Ad 8 -->
-  <img src="https://via.placeholder.com/600x300" alt="Example Image" style="display: block; margin: 2rem auto;" />
+    <!-- Ad 7 (Feed) -->
+    <div class="ad-container">
+      <div id="yandex_rtb_R-A-16127951-7"></div>
+      <script>
+        window.yaContextCb.push(() => {
+          Ya.Context.AdvManager.render({
+            blockId: "R-A-16127951-7",
+            renderTo: "yandex_rtb_R-A-16127951-7",
+            type: "feed"
+          });
+        });
+      </script>
+    </div>
+  </div>
+
+  <!-- Ad 8 (In-Image) -->
   <script>
     window.addEventListener("load", () => {
       const render = (imageId) => {
@@ -105,8 +155,8 @@
       const renderInImage = (images) => {
         if (!images.length) return;
         const image = images.shift();
-        image.id = `yandex_img_${Math.random().toString(16).slice(2)}`;
-        if (!image.complete) {
+        image.id = `yandex_rtb_R-A-16127951-8-${Math.random().toString(16).slice(2)}`;
+        if (image.tagName === "IMG" && !image.complete) {
           image.addEventListener("load", () => render(image.id), { once: true });
         } else {
           render(image.id);
