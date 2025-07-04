@@ -1,171 +1,173 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>إعلانات Yandex</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 15px;
-    }
-
-    .header {
-      background: #2196F3;
-      color: white;
-      padding: 15px;
-      text-align: center;
-      font-size: 22px;
-      border-radius: 5px;
-      margin-bottom: 20px;
-    }
-
-    .ad-container {
-      background: #fff;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      margin: 15px auto;
-      padding: 10px;
-      text-align: center;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    }
-
-    .ad-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 15px;
-    }
-  </style>
-
-  <!-- Yandex.RTB Loader Code - Include only ONCE -->
-  <script>window.yaContextCb = window.yaContextCb || [];</script>
-  <script src="https://yandex.ru/ads/system/context.js" async></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أجهزة Apple</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        section img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="header">إعلانات Yandex - الصفحة التجريبية</div>
+<header>
+    <h1>أشهر أجهزة Apple</h1>
+</header>
 
-  <div class="ad-grid">
-    <!-- Ad 1 -->
-    <div class="ad-container">
-      <div id="yandex_rtb_R-A-16127951-1"></div>
-      <script>
-        window.yaContextCb.push(() => {
-          Ya.Context.AdvManager.render({
-            blockId: "R-A-16127951-1",
-            renderTo: "yandex_rtb_R-A-16127951-1"
-          });
-        });
-      </script>
-    </div>
+<!-- الأقسام -->
+<section>
+    <h2>iPhone 15 Pro</h2>
+    <p>أحدث إصدار من هواتف Apple مع أداء عالي وكاميرا احترافية.</p>
+    <img src="https://via.placeholder.com/800x300?text=iPhone+15+Pro" alt="iPhone 15 Pro">
+</section>
 
-    <!-- Ad 2 -->
-    <div class="ad-container">
-      <div id="yandex_rtb_R-A-16127951-2"></div>
-      <script>
-        window.yaContextCb.push(() => {
-          Ya.Context.AdvManager.render({
-            blockId: "R-A-16127951-2",
-            renderTo: "yandex_rtb_R-A-16127951-2"
-          });
-        });
-      </script>
-    </div>
+<section>
+    <h2>iPhone 14</h2>
+    <p>هاتف ذكي يجمع بين الأداء والتكلفة، مناسب للجميع.</p>
+    <img src="https://via.placeholder.com/800x300?text=iPhone+14" alt="iPhone 14">
+</section>
 
-    <!-- Ad 3 -->
-    <div class="ad-container">
-      <div id="yandex_rtb_R-A-16127951-3"></div>
-      <script>
-        window.yaContextCb.push(() => {
-          Ya.Context.AdvManager.render({
-            blockId: "R-A-16127951-3",
-            renderTo: "yandex_rtb_R-A-16127951-3"
-          });
-        });
-      </script>
-    </div>
+<section>
+    <h2>iPad Pro</h2>
+    <p>جهاز لوحي متطور بمعالج M2 ولوحة Liquid Retina.</p>
+    <img src="https://via.placeholder.com/800x300?text=iPad+Pro" alt="iPad Pro">
+</section>
 
-    <!-- Ad 4 (Fullscreen Touch) -->
-    <div class="ad-container">
-      <script>
-        window.yaContextCb.push(() => {
-          Ya.Context.AdvManager.render({
-            blockId: "R-A-16127951-4",
-            type: "fullscreen",
-            platform: "touch"
-          });
-        });
-      </script>
-    </div>
+<section>
+    <h2>iPad Air</h2>
+    <p>جهاز خفيف وعالي الأداء مناسب للعمل والترفيه.</p>
+    <img src="https://via.placeholder.com/800x300?text=iPad+Air" alt="iPad Air">
+</section>
 
-    <!-- Ad 5 (FloorAd Touch) -->
-    <div class="ad-container">
-      <script>
-        window.yaContextCb.push(() => {
-          Ya.Context.AdvManager.render({
-            blockId: "R-A-16127951-5",
-            type: "floorAd",
-            platform: "touch"
-          });
-        });
-      </script>
-    </div>
+<section>
+    <h2>MacBook Air M2</h2>
+    <p>حاسوب محمول نحيف وخفيف بمعالج M2 القوي.</p>
+    <img src="https://via.placeholder.com/800x300?text=MacBook+Air+M2" alt="MacBook Air M2">
+</section>
 
-    <!-- Ad 6 (TopAd) -->
-    <div class="ad-container">
-      <script>
-        window.yaContextCb.push(() => {
-          Ya.Context.AdvManager.render({
-            blockId: "R-A-16127951-6",
-            type: "topAd"
-          });
-        });
-      </script>
-    </div>
+<section>
+    <h2>MacBook Pro 16"</h2>
+    <p>أقوى جهاز محمول من Apple بشاشة كبيرة وأداء احترافي.</p>
+    <img src="https://via.placeholder.com/800x300?text=MacBook+Pro+16" alt="MacBook Pro 16">
+</section>
 
-    <!-- Ad 7 (Feed) -->
-    <div class="ad-container">
-      <div id="yandex_rtb_R-A-16127951-7"></div>
-      <script>
-        window.yaContextCb.push(() => {
-          Ya.Context.AdvManager.render({
-            blockId: "R-A-16127951-7",
-            renderTo: "yandex_rtb_R-A-16127951-7",
-            type: "feed"
-          });
-        });
-      </script>
-    </div>
-  </div>
+<section>
+    <h2>iMac</h2>
+    <p>كمبيوتر مكتبي أنيق بمعالج Apple Silicon.</p>
+    <img src="https://via.placeholder.com/800x300?text=iMac" alt="iMac">
+</section>
 
-  <!-- Ad 8 (In-Image) -->
-  <script>
-    window.addEventListener("load", () => {
-      const render = (imageId) => {
-        window.yaContextCb.push(() => {
-          Ya.Context.AdvManager.render({
-            renderTo: imageId,
-            blockId: "R-A-16127951-8",
-            type: "inImage"
-          });
-        });
-      };
-      const renderInImage = (images) => {
-        if (!images.length) return;
-        const image = images.shift();
-        image.id = `yandex_rtb_R-A-16127951-8-${Math.random().toString(16).slice(2)}`;
-        if (image.tagName === "IMG" && !image.complete) {
-          image.addEventListener("load", () => render(image.id), { once: true });
-        } else {
-          render(image.id);
-        }
-        renderInImage(images);
-      };
-      renderInImage(Array.from(document.querySelectorAll("img")));
-    }, { once: true });
-  </script>
+<section>
+    <h2>Mac Studio</h2>
+    <p>محطة عمل متطورة مناسبة للمحترفين في مجالات التصميم والمونتاج.</p>
+    <img src="https://via.placeholder.com/800x300?text=Mac+Studio" alt="Mac Studio">
+</section>
+
+<section>
+    <h2>Mac mini</h2>
+    <p>جهاز مكتبي صغير الحجم بأداء قوي ومعالج M2.</p>
+    <img src="https://via.placeholder.com/800x300?text=Mac+mini" alt="Mac mini">
+</section>
+
+<section>
+    <h2>Apple Watch Series 9</h2>
+    <p>ساعة ذكية بتقنيات تتبع الصحة واللياقة.</p>
+    <img src="https://via.placeholder.com/800x300?text=Apple+Watch+Series+9" alt="Apple Watch">
+</section>
+
+<section>
+    <h2>Apple Watch Ultra</h2>
+    <p>ساعة متينة مصممة للمغامرين والرياضيين.</p>
+    <img src="https://via.placeholder.com/800x300?text=Apple+Watch+Ultra" alt="Apple Watch Ultra">
+</section>
+
+<section>
+    <h2>AirPods Pro 2</h2>
+    <p>سماعات لاسلكية مع ميزة إلغاء الضوضاء وجودة صوت عالية.</p>
+    <img src="https://via.placeholder.com/800x300?text=AirPods+Pro+2" alt="AirPods Pro 2">
+</section>
+
+<section>
+    <h2>AirPods Max</h2>
+    <p>سماعات رأس فاخرة من Apple بتقنيات صوت محيطي.</p>
+    <img src="https://via.placeholder.com/800x300?text=AirPods+Max" alt="AirPods Max">
+</section>
+
+<section>
+    <h2>Apple TV 4K</h2>
+    <p>جهاز بث لمحتوى 4K HDR مع دعم Dolby Atmos.</p>
+    <img src="https://via.placeholder.com/800x300?text=Apple+TV+4K" alt="Apple TV 4K">
+</section>
+
+<section>
+    <h2>HomePod</h2>
+    <p>مكبر صوت ذكي مع Siri وجودة صوت ممتازة.</p>
+    <img src="https://via.placeholder.com/800x300?text=HomePod" alt="HomePod">
+</section>
+
+<section>
+    <h2>HomePod mini</h2>
+    <p>مكبر صوت صغير الحجم مع أداء مميز.</p>
+    <img src="https://via.placeholder.com/800x300?text=HomePod+mini" alt="HomePod mini">
+</section>
+
+<section>
+    <h2>Magic Keyboard</h2>
+    <p>لوحة مفاتيح لاسلكية مريحة ومتوافقة مع أجهزة Mac وiPad.</p>
+    <img src="https://via.placeholder.com/800x300?text=Magic+Keyboard" alt="Magic Keyboard">
+</section>
+
+<section>
+    <h2>Magic Mouse</h2>
+    <p>فأرة أنيقة تدعم الإيماءات متعددة اللمس.</p>
+    <img src="https://via.placeholder.com/800x300?text=Magic+Mouse" alt="Magic Mouse">
+</section>
+
+<section>
+    <h2>Vision Pro</h2>
+    <p>نظارة الواقع المختلط الثورية من Apple.</p>
+    <img src="https://via.placeholder.com/800x300?text=Vision+Pro" alt="Vision Pro">
+</section>
+
+<section>
+    <h2>iCloud</h2>
+    <p>خدمة تخزين سحابي لمزامنة الملفات والنسخ الاحتياطي بين جميع أجهزة Apple.</p>
+    <img src="https://via.placeholder.com/800x300?text=iCloud" alt="iCloud">
+</section>
 
 </body>
 </html>
