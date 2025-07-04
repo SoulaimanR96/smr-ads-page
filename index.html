@@ -1,173 +1,104 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أجهزة Apple</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            direction: rtl;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #000;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        section {
-            background-color: #fff;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 12px;
-            width: 90%;
-            max-width: 800px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        section img {
-            width: 100%;
-            max-height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
-        h2 {
-            color: #333;
-        }
-        p {
-            color: #555;
-        }
-    </style>
+    <title>SMR - Software Projects Marketplace</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/SMRLOGO.png" alt="SMR Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<header>
-    <h1>أشهر أجهزة Apple</h1>
-</header>
+    <section class="hero">
+        <div class="container">
+            <h1>Premium Software Projects</h1>
+            <p>Get ready-to-use Android Studio applications and Visual Studio programs for your business or learning needs.</p>
+            <a href="products.html" class="btn">Browse Products</a>
+        </div>
+    </section>
 
-<!-- الأقسام -->
-<section>
-    <h2>iPhone 15 Pro</h2>
-    <p>أحدث إصدار من هواتف Apple مع أداء عالي وكاميرا احترافية.</p>
-    <img src="https://via.placeholder.com/800x300?text=iPhone+15+Pro" alt="iPhone 15 Pro">
-</section>
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose SMR Projects?</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Quality Code</h3>
+                    <p>Professionally developed with best practices and clean architecture.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-friendly applications that work across all devices.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-headset"></i>
+                    <h3>Support Included</h3>
+                    <p>Get free support for any issues after purchase.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section>
-    <h2>iPhone 14</h2>
-    <p>هاتف ذكي يجمع بين الأداء والتكلفة، مناسب للجميع.</p>
-    <img src="https://via.placeholder.com/800x300?text=iPhone+14" alt="iPhone 14">
-</section>
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-item">
+                    <p>"The Android app I purchased saved me weeks of development time. Highly recommended!"</p>
+                    <div class="author">- John D.</div>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Excellent Visual Studio project with clear documentation. Will buy again."</p>
+                    <div class="author">- Sarah M.</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section>
-    <h2>iPad Pro</h2>
-    <p>جهاز لوحي متطور بمعالج M2 ولوحة Liquid Retina.</p>
-    <img src="https://via.placeholder.com/800x300?text=iPad+Pro" alt="iPad Pro">
-</section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/SMRLOGO.png" alt="SMR Logo" class="footer-logo">
+                    <p>Your trusted source for premium software projects.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> contact@smr.com</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SMR. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-<section>
-    <h2>iPad Air</h2>
-    <p>جهاز خفيف وعالي الأداء مناسب للعمل والترفيه.</p>
-    <img src="https://via.placeholder.com/800x300?text=iPad+Air" alt="iPad Air">
-</section>
-
-<section>
-    <h2>MacBook Air M2</h2>
-    <p>حاسوب محمول نحيف وخفيف بمعالج M2 القوي.</p>
-    <img src="https://via.placeholder.com/800x300?text=MacBook+Air+M2" alt="MacBook Air M2">
-</section>
-
-<section>
-    <h2>MacBook Pro 16"</h2>
-    <p>أقوى جهاز محمول من Apple بشاشة كبيرة وأداء احترافي.</p>
-    <img src="https://via.placeholder.com/800x300?text=MacBook+Pro+16" alt="MacBook Pro 16">
-</section>
-
-<section>
-    <h2>iMac</h2>
-    <p>كمبيوتر مكتبي أنيق بمعالج Apple Silicon.</p>
-    <img src="https://via.placeholder.com/800x300?text=iMac" alt="iMac">
-</section>
-
-<section>
-    <h2>Mac Studio</h2>
-    <p>محطة عمل متطورة مناسبة للمحترفين في مجالات التصميم والمونتاج.</p>
-    <img src="https://via.placeholder.com/800x300?text=Mac+Studio" alt="Mac Studio">
-</section>
-
-<section>
-    <h2>Mac mini</h2>
-    <p>جهاز مكتبي صغير الحجم بأداء قوي ومعالج M2.</p>
-    <img src="https://via.placeholder.com/800x300?text=Mac+mini" alt="Mac mini">
-</section>
-
-<section>
-    <h2>Apple Watch Series 9</h2>
-    <p>ساعة ذكية بتقنيات تتبع الصحة واللياقة.</p>
-    <img src="https://via.placeholder.com/800x300?text=Apple+Watch+Series+9" alt="Apple Watch">
-</section>
-
-<section>
-    <h2>Apple Watch Ultra</h2>
-    <p>ساعة متينة مصممة للمغامرين والرياضيين.</p>
-    <img src="https://via.placeholder.com/800x300?text=Apple+Watch+Ultra" alt="Apple Watch Ultra">
-</section>
-
-<section>
-    <h2>AirPods Pro 2</h2>
-    <p>سماعات لاسلكية مع ميزة إلغاء الضوضاء وجودة صوت عالية.</p>
-    <img src="https://via.placeholder.com/800x300?text=AirPods+Pro+2" alt="AirPods Pro 2">
-</section>
-
-<section>
-    <h2>AirPods Max</h2>
-    <p>سماعات رأس فاخرة من Apple بتقنيات صوت محيطي.</p>
-    <img src="https://via.placeholder.com/800x300?text=AirPods+Max" alt="AirPods Max">
-</section>
-
-<section>
-    <h2>Apple TV 4K</h2>
-    <p>جهاز بث لمحتوى 4K HDR مع دعم Dolby Atmos.</p>
-    <img src="https://via.placeholder.com/800x300?text=Apple+TV+4K" alt="Apple TV 4K">
-</section>
-
-<section>
-    <h2>HomePod</h2>
-    <p>مكبر صوت ذكي مع Siri وجودة صوت ممتازة.</p>
-    <img src="https://via.placeholder.com/800x300?text=HomePod" alt="HomePod">
-</section>
-
-<section>
-    <h2>HomePod mini</h2>
-    <p>مكبر صوت صغير الحجم مع أداء مميز.</p>
-    <img src="https://via.placeholder.com/800x300?text=HomePod+mini" alt="HomePod mini">
-</section>
-
-<section>
-    <h2>Magic Keyboard</h2>
-    <p>لوحة مفاتيح لاسلكية مريحة ومتوافقة مع أجهزة Mac وiPad.</p>
-    <img src="https://via.placeholder.com/800x300?text=Magic+Keyboard" alt="Magic Keyboard">
-</section>
-
-<section>
-    <h2>Magic Mouse</h2>
-    <p>فأرة أنيقة تدعم الإيماءات متعددة اللمس.</p>
-    <img src="https://via.placeholder.com/800x300?text=Magic+Mouse" alt="Magic Mouse">
-</section>
-
-<section>
-    <h2>Vision Pro</h2>
-    <p>نظارة الواقع المختلط الثورية من Apple.</p>
-    <img src="https://via.placeholder.com/800x300?text=Vision+Pro" alt="Vision Pro">
-</section>
-
-<section>
-    <h2>iCloud</h2>
-    <p>خدمة تخزين سحابي لمزامنة الملفات والنسخ الاحتياطي بين جميع أجهزة Apple.</p>
-    <img src="https://via.placeholder.com/800x300?text=iCloud" alt="iCloud">
-</section>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
